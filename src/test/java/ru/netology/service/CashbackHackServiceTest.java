@@ -10,7 +10,7 @@ public class CashbackHackServiceTest {
 
     @Test
     public void shouldCorrectAmount() {
-        assertEquals(service.remain(2400), 600);
+        assertEquals(service.remain(2300), 700);
 
     }
 
