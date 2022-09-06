@@ -9,18 +9,18 @@ public class CashbackHackServiceTest {
 
     @Test
     public void shouldCorrectAmount() {
-        Assert.assertEquals(700, service.remain(2300));
+        Assert.assertEquals(service.remain(2300), 700);
 
     }
 
     @Test
     public void shouldAmountZero() {
-        Assert.assertEquals(1000, service.remain(0));
+        Assert.assertEquals(service.remain(0), 1000);
     }
 
     @Test
     public void shouldBuyExtraIfTheAmount1000() {
-        Assert.assertEquals(0, service.remain(1000));
+        Assert.assertEquals(service.remain(1000), 0);
     }
 
 }
